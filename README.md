@@ -40,9 +40,7 @@ Tracks:
    
    ❖ Add `/callback` to that and use it in your `.env` file as the redirect URI.
    
-3. Install the dependencies:
-  
-   `pip install -r requirements.txt`
+3. Install the dependencies: `pip install -r requirements.txt`
 
 6. Run the script: `python3 src/main.py`
 
