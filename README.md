@@ -11,14 +11,14 @@ This is a Python script that uses the Spotify API to pull info from a playlist (
 
 ## Example Output
 
-Playlist name: instrumental jazz
+Playlist name: Billboard Hot 100
 
-Total tracks: 208
+Total tracks: 100
 
 Tracks:
 
-- It Never Entered My Mind by Coleman Hawkins, Ben Webster
-- Chloe by Joe Pass
+- Ordinary by Alex Warren
+- What I Want (feat. Tate McRae) by Morgan Wallen, Tate McRae
 - ...
 
 ## How to Run It
