@@ -15,7 +15,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
 ))
 
 # Public playlist URL
-playlist_url = "https://open.spotify.com/playlist/4nMkjATDqJu3j3LHSt3g31"  # Today's Top Hits
+playlist_url = "https://open.spotify.com/playlist/6UeSakyzhiEt4NB3UAd6NQ"  # Billboard Hot 100
 playlist_id = playlist_url.split("/")[-1].split("?")[0]
 
 # Fetch playlist
