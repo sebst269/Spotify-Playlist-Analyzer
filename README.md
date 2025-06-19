@@ -25,12 +25,12 @@ Tracks:
 
 1. Clone the repo
 2. Create a .env file in the root directory with this format:
+  
+   `SPOTIPY_CLIENT_ID=your_spotify_client_id`
 
-  `SPOTIPY_CLIENT_ID=your_spotify_client_id`
+   `SPOTIPY_CLIENT_SECRET=your_spotify_client_secret`
 
-  `SPOTIPY_CLIENT_SECRET=your_spotify_client_secret`
-
-  `SPOTIPY_REDIRECT_URI=https://your-url.lhr.life/callback`
+   `SPOTIPY_REDIRECT_URI=https://your-url.lhr.life/callback`
   
 4. Start a tunnel so Spotify can redirect to your local app:
   
