@@ -1,0 +1,10 @@
+🎧 Playlist Summary for 'Billboard Hot 100':
+- Total duration: 326 min 54 sec
+- Average track length: 3 min 16 sec
+- Top 5 most frequent artists:
+  • Morgan Wallen (32 songs)
+  • Kendrick Lamar (5 songs)
+  • Tate McRae (3 songs)
+  • Shaboozey (3 songs)
+  • Benson Boone (3 songs)
+- Longest title: "Number 3 and Number 7 (feat. Eric Church)" by Morgan Wallen, Eric Church
