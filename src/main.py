@@ -10,6 +10,10 @@ import matplotlib.pyplot as plt
 # Load .env
 load_dotenv()
 
+# Ensure output folder exists
+output_dir = "Playlist Info"
+os.makedirs(output_dir, exist_ok=True)
+
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     client_id=os.getenv("SPOTIPY_CLIENT_ID"),
     client_secret=os.getenv("SPOTIPY_CLIENT_SECRET"),
@@ -49,12 +53,13 @@ args = parser.parse_args()
 
 # Export to CSV
 if args.export == "csv":
-    with open("playlist_export.csv", "w", newline="") as csvfile:
+    csv_path = os.path.join(output_dir, "playlist_export.csv")
+    with open(csv_path, "w", newline="") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=["title", "artists", "duration_s"])
         writer.writeheader()
         for track in track_list:
             writer.writerow(track)
-    print("Exported playlist data to playlist_export.csv")
+    print(f"Exported playlist data to {csv_path}")
 
 # Summary
 if args.summary:
@@ -76,10 +81,11 @@ if args.summary:
         summary_lines.append(f"  • {artist} ({count} songs)")
     summary_lines.append(f"- Longest title: \"{longest_title['title']}\" by {longest_title['artists']}")
 
-    with open("playlist_summary.txt", "w") as f:
+    summary_path = os.path.join(output_dir, "playlist_summary.txt")
+    with open(summary_path, "w") as f:
         for line in summary_lines:
             f.write(line + "\n")
-    print("Saved summary to playlist_summary.txt")
+    print(f"Saved summary to {summary_path}")
 
 # Plot
 if args.plot:
@@ -92,5 +98,7 @@ if args.plot:
     plt.xlabel("Duration (seconds)")
     plt.title("Top 10 Longest Tracks in Playlist")
     plt.tight_layout()
-    plt.savefig("top10_longest_tracks.png")
-    print("Saved chart to top10_longest_tracks.png")
+
+    plot_path = os.path.join(output_dir, "top10_longest_tracks.png")
+    plt.savefig(plot_path)
+    print(f"Saved chart to {plot_path}")
