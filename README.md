@@ -12,13 +12,13 @@ This tool connects to the Spotify API and analyzes a public playlist. It gives y
 
 ## Example Output
 
-Exported playlist data to playlist_export.csv
+Exported playlist data to Playlist Info/playlist_export.csv
 
-Saved summary to playlist_summary.txt
+Saved summary to Playlist Info/playlist_summary.txt
 
-Saved chart to top10_longest_tracks.png
+Saved chart to Playlist Info/top10_longest_tracks.png
 
-> Note: Go to spotify-playlist-analyzer folder to view your playlists' data, summary, and chart
+> Note: Go to spotify-playlist-analyzer/Playlist Info folder to view your playlists' data, summary, and chart
 
 <img width="250" alt="Screen Shot 2025-06-19 at 8 50 24 PM" src="https://github.com/user-attachments/assets/89300b0e-656c-4ba1-8927-b87db6f7c07a" />
 <img width="500" alt="Screen Shot 2025-06-19 at 8 51 21 PM" src="https://github.com/user-attachments/assets/82ba9496-ceec-4976-8fcf-50f76e3b7558" />
