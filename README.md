@@ -18,7 +18,7 @@ Saved summary to Playlist Info/playlist_summary.txt
 
 Saved chart to Playlist Info/top10_longest_tracks.png
 
-> Note: Go to spotify-playlist-analyzer/Playlist Info folder to view your playlists' data, summary, and chart
+> Go to spotify-playlist-analyzer/Playlist Info folder to view your playlists' data, summary, and chart
 
 <img width="250" alt="Screen Shot 2025-06-19 at 8 50 24 PM" src="https://github.com/user-attachments/assets/89300b0e-656c-4ba1-8927-b87db6f7c07a" />
 <img width="500" alt="Screen Shot 2025-06-19 at 8 51 21 PM" src="https://github.com/user-attachments/assets/82ba9496-ceec-4976-8fcf-50f76e3b7558" />
@@ -50,7 +50,7 @@ Saved chart to Playlist Info/top10_longest_tracks.png
 
 6. Run the script: `python3 src/main.py --summary --export csv --plot`
 
-> Note: You might need to tunnel your localhost using something like [localhost.run](https://localhost.run) if you want the OAuth redirect to work.
+> You might need to tunnel your localhost using something like [localhost.run](https://localhost.run) if you want the OAuth redirect to work.
 
 ## Future Plans
 
