@@ -1,4 +1,4 @@
-# Spotify Playlist Analyzer 🎵
+# Spotify Playlist Analyzer
 
 This tool connects to the Spotify API and analyzes a public playlist. It gives you key insights like total duration, top artists, and longest tracks, then exports the data and visualizes it.
 
